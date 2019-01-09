@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 import SearchBar from "./components/SearchBar";
 import Frameworks from "./components/Frameworks";
 
@@ -56,5 +57,8 @@ class App extends Component {
   }
 }
 
+App.propTypes = {
+  searchTerm: PropTypes.string
+};
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);

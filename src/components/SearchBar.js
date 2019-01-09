@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class SearchBAr extends Component {
   state = {
@@ -23,5 +24,9 @@ class SearchBAr extends Component {
     );
   }
 }
+
+SearchBAr.propTypes = {
+  searchTerm: PropTypes.string
+};
 
 export default SearchBAr;
